@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+
 public class MemberService {/*비즈니스에 가까운 용어를 써야한다,비즈니스에 의존적으로 설계 */
 
     // 회원 서비스를 만드려면 회원 리포지토리가 있어야 한다
     private final MemberRepository memberRepository;
 
-    @Autowired
+
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
